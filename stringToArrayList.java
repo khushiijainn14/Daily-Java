@@ -1,21 +1,23 @@
+//We will be having comma seperated string values and we will be storing it in the arraylist 
+
 import java.util.*;
 
 public class stringToArrayList{
-    public static void main(String[] args) {
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
+        System.out.print("Enter String");
+        String input=sc.nextLine();
+        String ch[]=input.split(",");
+        //String ch[]=input.split(" "); THIS IS FOR SPACE SEPERATED VALUES 
 
-        String st=sc.nextLine();
-        String ch[]=st.split(",");
+        ArrayList<Integer> arrList=new ArrayList<>();
 
-        ArrayList<Integer> arr=new ArrayList<>();
-
-        for(String token: ch){
-            int n=Integer.parseInt(token);
-            arr.add(n);
+        for(String token:ch){
+            int temp=Integer.parseInt(token);
+            arrList.add(temp);
         }
 
-        System.out.print(arr);
+        System.out.println("array list"+ arrList);
         sc.close();
     }
-    
 }

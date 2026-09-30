@@ -8,6 +8,7 @@ public class bracket {
         Scanner sc=new Scanner(System.in);
         String input=sc.nextLine();
 
+        //EXTRA CONDITON FOR HANDING INPUT VALUES 
         if(input.startsWith("[") && input.endsWith("]")){
             input=input.substring(1, input.length()-1);
         }
