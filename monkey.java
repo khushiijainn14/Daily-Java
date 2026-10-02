@@ -13,7 +13,6 @@ Where:
 Remember: The monkeys always eat bananas and peanuts, so there is no possibility of k or j having a value of zero.*/
 
 import java.util.Scanner;
-
 public class monkey {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
