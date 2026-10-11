@@ -1,0 +1,12 @@
+/*Write a program that processes a given string to determine:
+The first non-repeating character (if present).
+The most repeated character in the string.
+If multiple characters have the same highest frequency, print the first non-repeating character first, then the repeating character.
+If the input string is empty, print "Invalid Input".
+If all characters in the string are repeating, print "None" followed by the first repeating character.
+*/
+
+
+public class stringMuliple {
+    
+}

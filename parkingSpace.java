@@ -1,7 +1,7 @@
 //A parking lot in a mall has R × C parking spaces. Each parking space is either empty (0) or full (1).
 //The status of each parking space is represented as an element of a matrix M[R][C].
 //Your task is to find the index of the row that contains the maximum number of parking spaces marked as 1.
-
+//greedy algo
 
 import java.util.*;
 public class parkingSpace{

@@ -1,5 +1,5 @@
 //Most probably when we see TC- log(n) we will be using binary search 
-//
+//Given a sorted array of integers where every element appears exactly twice except for one element that appears only once, find the element that appears only once.
 
 import java.util.*;
 public class oddBinaarySearch {

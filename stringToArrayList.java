@@ -13,11 +13,16 @@ public class stringToArrayList{
         ArrayList<Integer> arrList=new ArrayList<>();
 
         for(String token:ch){
-            int temp=Integer.parseInt(token);
+            int temp =Integer.parseInt(token);
             arrList.add(temp);
         }
 
         System.out.println("array list"+ arrList);
         sc.close();
+
+
+
+
+
     }
 }

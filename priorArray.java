@@ -28,8 +28,7 @@ public class priorArray {
             if(priorEle<arr[i]){
                 count++;
                 priorEle=arr[i];
-            }
-           
+            }     
         }
         System.out.println("Answer"+ count);
         sc.close();

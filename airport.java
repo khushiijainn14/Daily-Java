@@ -8,47 +8,37 @@
 //Output:
 //Print the array elements sorted in ascending order, separated by spaces.
 
+//this is like dutch national flag algo and we will be using the 3 pointers approch in this 
+
 import java.util.*;
 public class airport {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int arr[]=new int[n];
-        int count0=0;
-        int count1=0;
-        int count2=0;
-
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
+        int low=0;
+        int mid=0;
+        int high=n-1;
 
-        for(int i=0;i<n;i++){
-            switch (arr[i]) {
-                case 0:
-                    count0++;
-                    break;
-                case 1:
-                    count1++;
-                    break;
-                default:
-                    count2++;
-                    break;
+        while(mid<=high){
+            if(arr[mid]==2){
+                int temp=arr[mid];
+                arr[mid]=arr[high];
+                arr[high]=temp;
+                high--;
+            }else if(arr[mid]==0){
+                int temp=arr[mid];
+                arr[mid]=arr[low];
+                arr[low]=temp;
+                mid++;
+                low++;        
+            }else{
+                mid++;
             }
-        }
-
-        for(int i=0;i<count0;i++){
-            arr[i]=0;
-        }
-
-        for(int i=count0;i<count0+count1;i++){
-            arr[i]=1;
-        }
-        
-
-        for(int i=count0+count1; i<n; i++){
-            arr[i]=2;
-        }
-
+        }   
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
